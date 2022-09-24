@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+    <div class="container p-3">
+        <div class="row pt-20">
+            <div class="col-10">
+                <h2 class="text-primary">Error occured ! Invalid Page or Something's gone wrong!</h2>
+            </div>
+        </div>
+        <br /><br />
+    </div>
+     <form>
+         <button asp-action="Index" asp-controller="User">Back To Login Page</button>
+     </form>
+    <form>
+        <button asp-action="SignUp" asp-controller="User">Back To Sign Up Page</button>
+    </form>
+</head>
+<body>
+</body>
+</html>

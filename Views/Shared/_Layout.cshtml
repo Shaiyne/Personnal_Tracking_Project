@@ -1,0 +1,78 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PERSONNEL TRACKING</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <div class="sidebar">
+
+                        <nav class="mt-2">
+                            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                                <li class="nav-header">PERSONNEL TRACKING</li>
+                                <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">
+                                    <i class="fas fa-circle nav-icon"></i>
+                                    Home
+                                </a>
+                                <li class="nav-item">
+                                    <a class="nav-link " asp-area="" asp-controller="Department" asp-action="Index">
+                                        <i class="fas fa-circle nav-icon"></i>
+                                        Departments
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " asp-area="" asp-controller="Personnel" asp-action="Index">
+                                        <i class="fas fa-circle nav-icon"></i>
+                                        Personnel
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " asp-area="" asp-controller="Inouttime" asp-action="Index">
+                                        <i class="fas fa-circle nav-icon"></i>
+                                        In Out Times
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                <a class="btn btn-secondary" asp-area="" asp-controller="User" asp-action="Logout">Log Out</a>
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        </div>
+
+
+
+        <aside class="control-sidebar control-sidebar-dark">
+        </aside>
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Berk\\source\\repos\\PersonnalTrackingProject\\PersonnalTrackingProject.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Berk\\source\\repos\\PersonnalTrackingProject\\PersonnalTrackingProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Berk\\source\\repos\\PersonnalTrackingProject\\PersonnalTrackingProject.csproj",
+        "projectName": "PersonnalTrackingProject",
+        "projectPath": "C:\\Users\\Berk\\source\\repos\\PersonnalTrackingProject\\PersonnalTrackingProject.csproj",
+        "packagesPath": "C:\\Users\\Berk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Berk\\source\\repos\\PersonnalTrackingProject\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Berk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Inouttime>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">In And Out Table</h2>
+        </div>
+        <div class="col-6" text-end>
+            <a asp-controller="Inouttime" asp-action="Adding" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> &nbsp; Add New Person In and Out Times
+            </a>
+        </div>
+    </div>
+    <br /><br />
+</div>
+
+<table class="table table-bordered table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                Personnel Name
+            </th>
+            <th>
+                Personnel Department
+            </th>
+            <th>
+                Entry Time
+            </th>
+            <th>
+                 Out Time
+            </th>
+            <th></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td with="50%">
+                    @obj.Personnel.PersonnelName
+                </td>
+                <td with="30%">
+                    @obj.Personnel.Department.DepartmentName
+                </td>
+                <td with="%50">
+                    @obj.EntryTime
+                </td>
+                <td with="%50">
+                    @obj.OutTime
+                </td>
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="Inouttime" asp-action="Edit" asp-route-id="@obj.InOutTimeID"
+                       class="btn btn-primary mx-2"><i class="bi bi-pencil-square"></i>Edit</a>
+                        <a asp-controller="Inouttime" asp-action="Delete" asp-route-id="@obj.InOutTimeID"
+                       class="btn btn-danger mx-2"><i class="bi bi-trash-fill"></i>Delete</a>
+                    </div>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

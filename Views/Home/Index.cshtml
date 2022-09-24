@@ -1,0 +1,21 @@
+﻿@using Microsoft.AspNetCore.Http;
+@{
+    ViewData["Title"] = "Home Page";
+    string fullname = Context.Session.GetString("fullname").ToUpper();
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <div class="container p-3">
+            <div class="row pt-20">
+                <div class="col-10">
+                    <h2 class="text-primary">Welcome @fullname</h2>
+                </div>
+            </div>
+        <br /><br />
+        </div>
+    </body>
+</html>
+
